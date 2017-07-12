@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_whatsapp_profile"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="15dip"
+            android:src="@mipmap/ic_launcher_round"
+            app:civ_border_width=".5dip" />
+
+        <LinearLayout
+            android:layout_width="230dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="25dip"
+                android:text="Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="3dip"
+                android:text="hello utsav shah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dip"
+                android:layout_marginTop="25dip"
+                android:text="10:20 AM"
+                android:textColor="#ffff00"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_message_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/circle"
+                android:backgroundTint="#00ff00"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginEnd="15dip"
+        android:layout_marginStart="95dip"
+        android:layout_marginTop="5dip"
+
+        />
+</LinearLayout>

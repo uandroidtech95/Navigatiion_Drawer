@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.utsav.navigatiion_drawer.OrvitoFragment">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_orvito_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orvito_title"
+        android:textSize="30sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_orvito_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/btn_star_big_on" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_orvito_face"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/img" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_orvito_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_orvito_face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/orvito_name"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_orvito_name"
+        android:background="#ffff00"
+        android:columnCount="2">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_orvito_control"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orvito"
+            android:paddingTop="45dp"
+            android:text="Control" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_orvito_view"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orvito_view"
+            android:paddingTop="45dp"
+            android:text="View" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_orvito_alert"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orvito_alert"
+            android:paddingTop="45dp"
+            android:text="Alerts" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_orvito_visitor"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orvito_visitor"
+            android:paddingTop="45dp"
+            android:text="Visitors" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_orvito_scene"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orvito_scene"
+            android:paddingTop="45dp"
+            android:text="Scenes" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_orvito_setting"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orvito_setting"
+            android:paddingTop="45dp"
+            android:text="Setting" />
+    </GridLayout>
+
+
+</RelativeLayout>

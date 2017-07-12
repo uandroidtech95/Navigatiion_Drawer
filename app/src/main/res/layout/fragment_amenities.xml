@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0000"
+    tools:context="com.example.utsav.navigatiion_drawer.AmenitiesFragment">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_amenity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/amenities_title"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+    <View
+
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tv_amenity_title"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#747474" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/line"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/amenities_internet"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_internet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/line"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_internet"
+        android:background="@drawable/freewifi" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/line"
+        android:layout_below="@+id/tv_internet"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/amenities_breakfast"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_breakfast"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_internet"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_internet"
+        android:background="@drawable/breakfast" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_handicap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/line"
+        android:layout_below="@+id/tv_breakfast"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/amenities_Handicap"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_handicap"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_breakfast"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_internet"
+        android:background="@drawable/handicap" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/line"
+        android:layout_below="@+id/tv_handicap"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/amenities_event"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_event"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_handicap"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_internet"
+        android:background="@drawable/ticket" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_park"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/line"
+        android:layout_below="@+id/tv_event"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/amenities_parking"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_parking"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_event"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_internet"
+        android:background="@drawable/parking" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_park"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:background="#747474"
+        android:text="SAVE"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/ic_delete"
+        android:backgroundTint="#ffffff" />
+
+</RelativeLayout>

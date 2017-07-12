@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallet"
+    tools:context="com.example.utsav.navigatiion_drawer.WalletFragment">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_wallet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/wallet_title"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_wallet_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wallet_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/wallet_message"
+        android:textSize="19sp"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_wallet_signin_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wallet_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/wallet_signin_message"
+        android:textSize="17sp"
+        />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_wallet_signin"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_wallet_signin_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/dotted"
+        android:drawableLeft="@drawable/user"
+        android:hint="User Name"
+        android:padding="10dp"
+        android:paddingStart="10dp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_wallet_password"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_wallet_signin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dotted"
+        android:drawableLeft="@drawable/password"
+        android:hint="Password"
+        android:padding="10dp"
+        android:paddingStart="10dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_wallet_register"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/et_wallet_password"
+        android:layout_below="@id/et_wallet_password"
+        android:layout_marginTop="30dp"
+        android:background="#ffff00"
+        android:text="Register" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_wallet_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_wallet_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="OR"
+        android:textSize="25sp" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_wallet_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/et_wallet_password"
+        android:layout_below="@id/et_wallet_password"
+        android:layout_marginTop="30dp"
+        android:background="#ff00"
+
+        android:text="Login" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_wallet_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wallet_or"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/wallet_forgot"
+        android:textColor="#0000ff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignEnd="@id/btn_wallet_register"
+        android:layout_alignStart="@id/btn_wallet_register"
+        android:layout_below="@id/tv_wallet_forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_wallet_anothersign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wallet_forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/wallet_another_signin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignEnd="@id/btn_wallet_login"
+        android:layout_alignStart="@id/btn_wallet_login"
+        android:layout_below="@id/tv_wallet_forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ivbtn_wallet_facebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_wallet_anothersign"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_facebook" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ivbtn_wallet_twitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_wallet_anothersign"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_twitter" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ivbtn_wallet_google"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_wallet_anothersign"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_google" />
+
+
+</RelativeLayout>

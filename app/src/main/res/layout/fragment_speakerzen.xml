@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454545"
+    tools:context="com.example.utsav.navigatiion_drawer.SpeakerzenFragment">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_speaker"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/speaker" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_speaker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_login"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_social_message"
+        android:textColor="#FFFFFF" />
+
+    <GridLayout
+        android:id="@+id/tr_social"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_social"
+        android:layout_marginTop="10dp"
+        android:columnCount="3">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imbtn_facebook"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/facebook" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imbtn_twitter"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/twitter" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imbtn_linkedin"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/linkedin" />
+
+    </GridLayout>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_signin"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tr_social"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/rectangle"
+        android:hint="User name"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColor="#FFFFFF" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_signup"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_signin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        android:hint="Password"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColor="#FFFFFF" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_signin"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#123456"
+
+        android:text="Sign in" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/iv_speaker"
+        android:layout_alignStart="@+id/btn_signin"
+        android:layout_below="@+id/btn_signin"
+        android:text="@string/tv_information"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/btn_signin"
+        android:layout_below="@+id/btn_signin"
+        android:text="@string/tv_singup"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

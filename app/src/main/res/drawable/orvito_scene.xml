@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorPrimary"></item>
+    <item android:drawable="@drawable/scene"
+        android:top="30dp"
+        android:bottom="40dp"
+        android:end="60dp"
+        android:left="60dp"
+        android:right="60dp"
+        android:start="60dp"
+        ></item>
+</layer-list>
